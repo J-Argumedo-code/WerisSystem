@@ -1,0 +1,8 @@
+.policie{
+    border-radius: 15px;
+    background: var(--bg-color);
+}
+.main-btn:hover, .main-btn.active{
+    background-color: var(--color);
+    color: white;
+}

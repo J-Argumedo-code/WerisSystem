@@ -1,0 +1,7 @@
+.background-user{
+    height: 250px;
+    background-image: url(../resources/profile_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

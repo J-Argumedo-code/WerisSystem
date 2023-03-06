@@ -1,0 +1,26 @@
+*{
+    color: rgb(245, 245, 245);
+}
+:root{
+    --bg-light: rgb(19, 19, 19);
+}
+.modal-content{
+    background-color: var(--bg-light);
+}
+.form-input, .form-input:focus, .data{
+    box-shadow:  10px 10px 30px #080808,
+             -10px -10px 30px #1e1e1e !important;
+}
+.navbar input, 
+.navbar input:focus-visible, 
+.main-btn, 
+.icon-btn:hover, 
+.icon-btn.active{
+    background-color: rgb(27, 27, 27);
+}
+.icon-btn, .icon-btn-2, .icon-btn:focus, .icon-btn-2:focus, .data .align-items-center svg{
+    fill: rgb(175, 175, 175);
+}
+.navbar{
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.15);
+}

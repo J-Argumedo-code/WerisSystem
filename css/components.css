@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --bg-light: #fff;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #3d64ff;
+    border-radius: 4px;
+}
+body{
+    background-color: var(--bg-light);
+    overflow: hidden;
+}
+main{
+    overflow-y: scroll;
+    height: calc(100vh - 80px);
+}
+.client-search{
+    top: -100%;
+    background-color: var(--bg-light);
+    z-index: 9999;
+    transition: top .8s;
+}
+.client-search.active{
+    top: 80px;
+}
+.main-btn{
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgb(247, 247, 247);
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-btn:hover, .main-btn.active{
+    background-color: #3d64ff;
+    color: white;
+}
+.main-btn svg{
+    transition: all 0.5s;
+}
+.main-btn:hover svg, .main-btn.active svg{
+    fill: white;
+}
+.overlay{
+    transition: all 0.5s;
+    z-index: -1000;
+    height: 100vh;
+    opacity: 0%;
+    background-color: rgba(0, 0, 0);
+    top: 0;
+}
+.overlay.active{
+    z-index: 9998;
+    opacity: 50%;
+}
+nav, .modal-backdrop.show{
+    z-index: 9999;
+}
+.navbar{
+    background-color: var(--bg-light);
+    height: 80px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+}
+
+.navbar img{
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    width: 200px;
+}
+.badge{
+    height: fit-content;
+}
+
+.modal{
+    z-index: 999999;
+}
+
+.form-input, .form-input:focus{
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--bg-light);
+    box-shadow:  10px 10px 30px #ebebeb,
+             -10px -10px 30px #ffffff !important;
+    transition: background 0.5s;
+    transition: box-shadow 0.5s;
+}
+.form-floating>label{
+    left: auto !important;
+}
+.navbar input, .navbar input:focus-visible{
+    background-color: rgb(247, 247, 247);
+    box-shadow: none !important;
+    transition: background 0.5s;
+}
+.sidebar{
+    height: calc(100vh - 80px);
+}
+.icon-btn, .icon-btn-2, .icon-btn:focus, .icon-btn-2:focus{
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    width: 50px;
+    fill: rgb(80, 80, 80);
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 14px;
+    border-radius: 10px;
+}
+.icon-btn:hover, .icon-btn.active{
+    fill: #3d64ff;
+    background-color: rgb(247, 247, 247);
+}
+.icon-btn-2:hover{
+    background-color: #3d64ff;
+    fill: white;
+}
+.text-justify{
+    text-align: justify;
+}
