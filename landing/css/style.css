@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-light: #fff;
+    --weris-blue: #1A287A;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--weris-blue);
+    border-radius: 4px;
+}
+@font-face {
+    font-family: 'BasierCircle-Regular';
+    src: url('../resources/Font/BasierCircle-Regular.otf');
+}
+@font-face {
+    font-family: 'BasierCircle-Bold';
+    src: url('../resources/Font/BasierCircle-Bold.otf');
+}
+
+.weris-blue{
+    color: var(--weris-blue);
+}
+
+.navbar{
+    height: 110px;
+    font-family: 'BasierCircle-Regular';
+}
+.nav-link:hover{
+    font-family: 'BasierCircle-Bold';
+}
+
+.banner-principal{
+    background-color: red;
+}

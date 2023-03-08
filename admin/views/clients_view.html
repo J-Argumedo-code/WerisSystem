@@ -308,12 +308,19 @@
                     </ul>
                     <div class="tab-content row mb-5">
                         <div class="tab-pane fade show active" id="comprasTabPane">
-                            <div class="row h75vh">
-                                <div class="pe-2 mt-4 col-1">
-                                    <button class="main-btn w-100 mb-3">Activos</button>
-                                    <button class="main-btn w-100">Historial</button>
-                                </div>
-                                <div class="pt-4 col-11 banner container-fluid">
+                            <ul class="nav justify-content-center mt-4 mb-5">
+                                <li class="nav-item">
+                                    <button class="main-btn mx-2 active" data-bs-toggle="tab"
+                                        data-bs-target="#activePurchase">Activos</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="main-btn mx-2" data-bs-toggle="tab"
+                                        data-bs-target="#historyPurchase">Historial</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <!--Pestaña de compras activas-->
+                                <div class="tab-pane fade show active" id="activePurchase" tabindex="0">
                                     <div class="row fw-bold">
                                         <div class="col-1">Comp.</div>
                                         <div class="col-2">Afiliado</div>
@@ -326,8 +333,6 @@
                                         <div class="col-1">Total</div>
                                     </div>
                                     <hr>
-
-                                    <!--Data-->
                                     <div class="row data py-4 mb-4">
                                         <div class="col-1">PRUEBA</div>
                                         <div class="col-2">ALEX PALACIOS</div>
@@ -348,7 +353,57 @@
                                             Ver detalle
                                         </button>
                                     </div>
-                                    
+                                    <div class="d-flex">
+                                        <img src="../resources/LogoGt.png" alt="" height="175px" class="mx-auto">
+                                    </div>
+                                </div>
+
+                                <!--Pestaña de compras inactivas/completadas-->
+                                <div class="tab-pane fade" id="historyPurchase" tabindex="0">
+                                    <form action="" class="row justify-content-center mb-5">
+                                        <input type="search" placeholder="Buscar compra..." class="form-input"
+                                            style="width: 35%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                            class="icon-btn m-0">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                        </svg>
+                                    </form>
+                                    <div class="row fw-bold">
+                                        <div class="col-1">Comp.</div>
+                                        <div class="col-2">Afiliado</div>
+                                        <div class="col-2">Comercio</div>
+                                        <div class="col-1">Caja</div>
+                                        <div class="col-1">Tipo Orden</div>
+                                        <div class="col-1">Referencia</div>
+                                        <div class="col-2">Observación</div>
+                                        <div class="col-1">Fecha orden</div>
+                                        <div class="col-1">Total</div>
+                                    </div>
+                                    <hr>
+                                    <div class="row data py-4 mb-4">
+                                        <div class="col-1">PRUEBA</div>
+                                        <div class="col-2">ALEX PALACIOS</div>
+                                        <div class="col-2">CHEKES</div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1">1</div>
+                                        <div class="col-1"></div>
+                                        <div class="col-2">Tocar timbre</div>
+                                        <div class="col-1">02-03-23</div>
+                                        <div class="col-1">$17.00</div>
+                                        <button class="main-btn w-25 mx-auto mt-4" data-bs-toggle="modal"
+                                            data-bs-target="#detailModal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="me-3"
+                                                width="30">
+                                                <path
+                                                    d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                            </svg>
+                                            Ver detalle
+                                        </button>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="../resources/LogoGt.png" alt="" height="175px" class="mx-auto">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -362,26 +417,19 @@
                                         data-bs-target="#locationModal">Ver disponibles</button>
                                     <button class="main-btn w-100">Asignar</button>
                                 </div>
-                                <div class="mt-4 col-10 banner container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 d-flex align-items-center">
-                                            <img src="../resources/profile/1.jpg" alt="" class="rounded-circle"
-                                                width="25%">
-                                            <div class="mx-4">
-                                                <p>Conductor:</p>
-                                                <h5>Fernando Martínez</h5>
-                                                <div class="d-flex align-items-center" tabindex="0"
-                                                    data-bs-toggle="popover" data-bs-trigger="hover"
-                                                    data-bs-title="Último comentario"
-                                                    data-bs-content="And here's some amazing content. It's very engaging. Right?">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <p class="m-0 mt-1 ms-2">5</p>
-                                                </div>
-                                            </div>
+                                <div class="mt-4 col-10 d-flex align-items-center" style="height: fit-content;">
+                                    <img src="../resources/profile/1.jpg" alt="" class="rounded-circle" width="25%">
+                                    <div class="mx-4">
+                                        <p>Conductor:</p>
+                                        <h5>Fernando Martínez</h5>
+                                        <div class="d-flex align-items-center" tabindex="0" data-bs-toggle="popover"
+                                            data-bs-trigger="hover" data-bs-title="Último comentario"
+                                            data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <p class="m-0 mt-1 ms-2">5</p>
                                         </div>
                                     </div>
                                 </div>
@@ -394,7 +442,7 @@
                                     <button class="main-btn" data-bs-toggle="modal"
                                         data-bs-target="#ticketModal">Agregar ticket</button>
                                 </div>
-                                <div class="col-10 banner container-fluid mt-4">
+                                <div class="col-10 container-fluid mt-4">
                                     <form action="" class="row justify-content-center">
                                         <input type="search" placeholder="Buscar ticket..." class="form-input"
                                             style="width: 35%;">

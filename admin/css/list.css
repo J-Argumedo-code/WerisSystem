@@ -6,13 +6,6 @@
     transition: box-shadow 0.5s;
 }
 
-.banner{
-    background-image: url(../resources/LogoGt.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .tab-pane .h75vh{
     min-height: 75vh;
 }
