@@ -2,10 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'BasierCircle-Regular';
 }
 :root{
     --bg-light: #fff;
     --weris-blue: #1A287A;
+    --weris-sky-blue: #76C6FD;
+    --weris-orange: #FC541F;
 }
 ::-webkit-scrollbar {
     width: 6px;
@@ -23,6 +26,10 @@
     font-family: 'BasierCircle-Bold';
     src: url('../resources/Font/BasierCircle-Bold.otf');
 }
+@font-face {
+    font-family: 'BasierCircle-SemiBold';
+    src: url('../resources/Font/BasierCircle-SemiBold.otf');
+}
 
 .weris-blue{
     color: var(--weris-blue);
@@ -30,12 +37,76 @@
 
 .navbar{
     height: 110px;
-    font-family: 'BasierCircle-Regular';
 }
+
 .nav-link:hover{
     font-family: 'BasierCircle-Bold';
 }
+.btn-main, .btn-main-2{
+    padding: 8px 15px !important;
+    border: 1px solid var(--weris-blue);
+    color: var(--weris-blue);
+    border-radius: 12px;
+    transition: .5s;
+    background: none;
+}
+.btn-main:hover{
+    background-color: var(--weris-blue);
+    color: white;
+}
+.btn-main-2{
+    border: 1px solid var(--weris-orange);
+    color: var(--weris-orange);
+}
+.btn-main-2:hover{
+    background-color: var(--weris-orange);
+    color: white;
+}
 
-.banner-principal{
-    background-color: red;
+h1, h2, h3{
+    font-size: 64px;
+    font-family: 'BasierCircle-Bold';
+    color: var(--weris-blue);
+}    
+h2{
+    font-size: 50px;
+}
+h3{
+    font-size: 35px;
+    color: var(--weris-orange);
+}
+h5{
+    font-family: 'BasierCircle-SemiBold';
+    font-size: 15px;
+}
+p{
+    font-size: 20px;
+    color: #ADACAC;
+}
+
+.banner-principal-figure{
+    background-color: var(--weris-sky-blue);
+}
+
+.what-we-do-circle{
+    width: 200px;
+    height: 200px;
+}
+
+.stores-img{
+    filter: grayscale(1);
+    transition: .5s;
+}
+.stores-img:hover{
+    filter: grayscale(0);
+    scale: 1.1;
+}
+.footer{
+    background-color: var(--weris-blue);
+    height: 300px;
+}
+.footer p{
+    font-size: 11px;
+    color: white;
+    margin: 30px 0;
 }
